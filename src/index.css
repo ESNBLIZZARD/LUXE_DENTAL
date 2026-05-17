@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-luxury-bg: #fcfcfc;
+  --color-luxury-accent: #7c9085; /* Modern Sage */
+  --color-luxury-gold: #b8976d; /* Muted Gold */
+  --color-luxury-ink: #0a0f14; /* Deep Charcoal */
+  --color-luxury-gray: #64748b;
+  --color-luxury-white: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-luxury-bg text-luxury-ink font-sans antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-luxury-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-luxury-accent/30 rounded-full hover:bg-luxury-accent/50 transition-colors;
+}

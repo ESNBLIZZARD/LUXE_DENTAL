@@ -1,0 +1,6 @@
+{
+  "name": "LuxeDental - Premium Oral Design",
+  "description": "A luxury dental clinic website with world-class cosmetic dentistry, advanced technology, and a spa-like patient experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
