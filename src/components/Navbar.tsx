@@ -102,7 +102,10 @@ export default function Navbar() {
             </a>
           ))}
           <div className="pt-6 flex flex-col gap-4">
-            <motion.button 
+            <motion.a 
+              href="https://care-pulse-iota-eight.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="group/btn relative w-full flex items-center justify-center gap-2 bg-luxury-accent text-luxury-white py-4 rounded-full font-bold uppercase tracking-widest text-xs overflow-hidden transition-colors duration-300"
@@ -113,7 +116,7 @@ export default function Navbar() {
                 <ArrowRight size={16} className="absolute inset-0 transition-transform duration-1000 ease-in-out group-hover/btn:translate-x-full" />
                 <ArrowRight size={16} className="absolute inset-0 transition-transform duration-1000 ease-in-out -translate-x-full group-hover/btn:translate-x-0" />
               </div>
-            </motion.button>
+            </motion.a>
           </div>
         </motion.div>
       )}

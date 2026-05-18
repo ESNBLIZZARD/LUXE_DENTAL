@@ -83,7 +83,10 @@ export default function Hero() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center gap-6"
           >
-            <motion.button 
+            <motion.a 
+              href="https://care-pulse-iota-eight.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="group/btn relative flex items-center justify-center gap-2 bg-luxury-ink text-luxury-white px-10 py-5 rounded-full font-bold uppercase tracking-widest text-xs overflow-hidden transition-colors duration-300"
@@ -94,7 +97,7 @@ export default function Hero() {
                 <ArrowRight size={16} className="absolute inset-0 transition-transform duration-1000 ease-in-out group-hover/btn:translate-x-full" />
                 <ArrowRight size={16} className="absolute inset-0 transition-transform duration-1000 ease-in-out -translate-x-full group-hover/btn:translate-x-0" />
               </div>
-            </motion.button>
+            </motion.a>
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
